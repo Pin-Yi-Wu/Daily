@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mina.daily">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bag_icons48"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <!-- 選擇顏色 -->
+        <activity
+            android:name=".ColorActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <!-- 加入設定元件啟動用的Action名稱 -->
+            <intent-filter>
+                <action android:name="com.example.mina.daily.CHOOSE_COLOR"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- 記事項目元件 -->
+        <activity
+        android:name=".ItemActivity">
+          <intent-filter>
+            <!-- 新增用的名稱 -->
+            <action android:name="com.example.mina.daily.ADD_ITEM"/>
+            <!-- 修改用的名稱 -->
+            <action android:name="com.example.mina.daily.EDIT_ITEM"/>
+            <!-- 一定要加入，內容固定不變 -->
+            <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+        <!-- 設定元件 -->
+        <activity
+            android:name=".PrefActivity" />
+
+
+ </application>
+</manifest>

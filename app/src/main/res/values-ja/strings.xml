@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<string name="app_name">日々</string>
+
+<string name="title">タイトル</string>
+<string name="enter_title">タイトルを入力します。</string>
+<string name="content">コンテンツ</string>
+<string name="enter_content">内容を入力してください</string>
+<string name="version">バージョン：Androidのdaily_0.1</string>
+<string name="about">這是一個紀錄毎日の日記的應用程式</string>
+<string name="delete">削除します</string>
+<string name="delete_item">必ず％1項目を削除するには、ありたいですか？</string>
+<string name="default_color">P・リセット・カラー</string>
+<string name="default_color_summary">プリセットカラーのメモを取ります</string>
+
+<string name="default_notify">既定のアラーム時間</string>
+<string name="default_notify_summary">指定された時間の通知前に</string>
+
+<string-array name="notify_minutes_array">
+    <item>5 min</item>
+    <item>10 min</item>
+    <item>20 min</item>
+    <item>30 min</item>
+    <item>60 min</item>
+</string-array>
+
+<string-array name="notify_minutes_value_array">
+    <item>5</item>
+    <item>10</item>
+    <item>20</item>
+    <item>30</item>
+    <item>60</item>
+</string-array>
+</resources>
